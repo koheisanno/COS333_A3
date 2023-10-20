@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Registrar's Office Class Search</title>
+   </head>
+
+   <body>
+        {% include 'header.html' %}
+        <h2>Class Search</h2>
+        <hr>
+      <form action="/" method="get">
+         <table>
+            <tr>
+               <td align="right">Dept:</td>
+               <td><input type="text" id="deptInput"
+                  name="dept" value="{{ dept }}"><br></td>
+            </tr>
+
+            <tr>
+            <td align="right">Number:</td>
+               <td>
+                  <input type="text" id="coursenumInput"
+                     name="coursenum" value="{{ coursenum }}"><br>
+               </td>
+            </tr>
+
+            <tr>
+               <td align="right">Area:</td>
+               <td><input type=text id="areaInput"
+                  name="area" value="{{ area }}"><br></td>
+            </tr>
+
+            <tr>
+            <td align="right">Title:</td>
+               <td>
+                  <input type="text" id="titleInput"
+                     name="title" value="{{ title }}"><br>
+               </td>
+            </tr>
+
+            <tr>
+               <td></td>
+               <td><input type="submit"id="submitButton"></td>
+            </tr>
+
+         </table>
+      </form>
+
+      <hr>
+
+      <table id="overviewsTable" border="1">
+         <tr>
+            <td><strong>ClassId</strong></td>
+            <td><strong>Dept</strong></td>
+            <td><strong>Num</strong></td>
+            <td><strong>Area</strong></td>
+            <td><strong>Title</strong></td>
+         </tr>
+
+         {% for result in results: %}
+            <tr>
+                <td>
+                   <a href="/regdetails?classid={{result[0]}}">
+                    {{result[0]}}</a>
+                </td>
+
+                <td>{{result[1]}}</td>
+                <td>{{result[2]}}</td>
+                <td>{{result[3]}}</td>
+                <td>{{result[4]}}</td>
+             </tr>
+         {% endfor %}
+         
+      </table>
+
+      <br>
+      {% include 'footer.html' %}
+   </body>
+</html>
