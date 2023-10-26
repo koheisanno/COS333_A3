@@ -11,6 +11,10 @@ def clean_arg(arg):
 
     return '%'
 
+def str_or_empty(arg):
+    if arg: return arg
+    else: return ""
+
 @app.route('/regdetails', methods=['GET'])
 def regdetails():
     classid = flask.request.args.get('classid')
@@ -35,11 +39,11 @@ def index():
                                     'get_overviews')
 
     html_code = flask.render_template('index.html', 
-                                      results=results, 
-                                      dept=dept,
-                                      coursenum=coursenum,
-                                      area=area,
-                                      title=title)
+                                      results=str_or_empty(results), 
+                                      dept=str_or_empty(dept),
+                                      coursenum=str_or_empty(coursenum),
+                                      area=str_or_empty(area),
+                                      title=str_or_empty(title))
     response = flask.make_response(html_code)
     return response
 
