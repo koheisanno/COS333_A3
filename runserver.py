@@ -3,6 +3,7 @@ import registrar
 import argparse
 
 def main():
+    # add port argument
     parser = argparse.ArgumentParser(
         description='The registrar application',
         allow_abbrev=False)
@@ -10,13 +11,18 @@ def main():
         help='the port at which the server should liste',
         type=int)
 
+    # parse port argument
     try:
-        print(parser.parse_args().port)
         port = parser.parse_args().port
-        registrar.app.run(host='0.0.0.0', port=port, debug=True)
+    except Exception:
+        print('Port must be an integer.', file=sys.stderr) 
+        sys.exit(1)
         
-    except Exception as ex:
-        print(ex, file=sys.stderr)
+    # run application
+    try:
+        registrar.app.run(host='0.0.0.0', port=port, debug=True)
+    except Exception as ex: 
+        print(ex, file=sys.stderr) 
         sys.exit(1)
 
 
