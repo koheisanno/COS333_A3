@@ -6,7 +6,7 @@ app = flask.Flask(__name__, template_folder='.')
 
 def clean_arg(arg):
     if arg:
-        arg = arg.strip().replace('%', r'\%').replace('_', r'\_')
+        arg = arg.replace('%', r'\%').replace('_', r'\_')
         return '%'+arg+'%'
 
     return '%'
