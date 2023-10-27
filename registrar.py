@@ -27,10 +27,51 @@ def regdetails():
 
 @app.route('/', methods=['GET'])
 def index():
-    dept = flask.request.args.get('dept')
-    coursenum = flask.request.args.get('coursenum')
-    area = flask.request.args.get('area')
-    title = flask.request.args.get('title')
+    last_dept = flask.request.cookies.get('dept')
+    last_coursenum = flask.request.cookies.get('coursenum')
+    last_area = flask.request.cookies.get('area')
+    last_title = flask.request.cookies.get('title')
+    
+    new_dept = flask.request.args.get('dept')
+    if new_dept is not None:
+        dept = new_dept
+    elif last_dept is not None:
+        dept = last_dept
+    else:
+        dept = ''
+
+    new_coursenum = flask.request.args.get('coursenum')
+    if new_coursenum is not None:
+        coursenum = new_coursenum
+    elif last_coursenum is not None:
+        coursenum = last_coursenum
+    else:
+        coursenum = ''
+    
+    new_area = flask.request.args.get('area')
+    if new_area is not None:
+        area = new_area
+    elif last_area is not None:
+        area = last_area
+    else:
+        area = ''
+    
+    new_title = flask.request.args.get('title')
+    if new_title is not None:
+        title = new_title
+    elif last_title is not None:
+        title = last_title
+    else:
+        title = ''
+    
+    
+    
+    # if coursenum is None: 
+    #     coursenum = flask.request.cookies.get('coursenum')
+    # if area is None: 
+    #     area = flask.request.cookies.get('area')
+    # if title is None: 
+    #     title = flask.request.cookies.get('title')
 
     results = reg_db.connect_to_db([clean_arg(dept), 
                                     clean_arg(coursenum), 
@@ -45,5 +86,10 @@ def index():
                                       area=str_or_empty(area),
                                       title=str_or_empty(title))
     response = flask.make_response(html_code)
+    response.set_cookie('dept', str_or_empty(dept))
+    response.set_cookie('coursenum', str_or_empty(coursenum))
+    response.set_cookie('area', str_or_empty(area))
+    response.set_cookie('title', str_or_empty(title))
+
     return response
 
