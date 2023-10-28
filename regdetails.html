@@ -3,12 +3,14 @@
 <html>
 
    <head>
-      <title>Registrar's Office Class Details</title>
+      <title>Registrar's Office Class Details </title>
    </head>
 
-   <body id="mybody">
-        {% include 'header.html' %}
-        <hr>
+   <body>
+      {% include 'header.html' %}
+
+      {% if success == true %}
+      <hr>
       <h2>Class Details (class id {{ classid }})</h2>
 
       <table id="classDetailsTable" border="1">
@@ -92,6 +94,12 @@
       <hr>
       Click here to do <a href="/?dept={{dept}}&coursenum={{coursenum}}&area={{area}}&title={{title}}">
       another class search</a>
+
+      {% else %}
+      
+      <p>{{ results }}</p>
+
+      {% endif %}
 
       {% include 'footer.html' %}
 

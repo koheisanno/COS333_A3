@@ -1,6 +1,6 @@
-import html # html_code.escape() is used to thwart XSS attacks
 import flask
-import reg_db
+import sys
+from reg_db import MissingIdError, connect_to_db
 
 app = flask.Flask(__name__, template_folder='.')
 
@@ -24,32 +24,58 @@ def regdetails():
 
     classid = flask.request.args.get('classid')
 
-    results = reg_db.connect_to_db(classid, 'get_detail')
+    if classid is None or classid == '':
+        success = False
+        results = 'missing classid'
 
-    html_code = flask.render_template('regdetails.html', results=results, dept = last_dept, coursenum = last_coursenum,
+    else:
+        try:
+            classid = int(classid)
+            success = True
+            results = connect_to_db(classid, 'get_detail')
+        
+        except ValueError:
+            success = False
+            results = 'non-integer classid'
+
+        except MissingIdError as ex:
+            success = False
+            results = ex
+            print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
+
+        except Exception as ex:
+            html_code = flask.render_template('error.html')
+            response = flask.make_response(html_code)
+
+            print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
+            return response
+
+    html_code = flask.render_template('regdetails.html', success=success, results=results, dept = last_dept, coursenum = last_coursenum,
                                       area = last_area, title = last_title, classid = classid)
     response = flask.make_response(html_code)
     return response
 
 @app.route('/', methods=['GET'])
 def index():
-    
-    
     dept = flask.request.args.get('dept')
-
     coursenum = flask.request.args.get('coursenum')
-
-    
     area = flask.request.args.get('area')
-    
     title = flask.request.args.get('title')
-    
 
-    results = reg_db.connect_to_db([clean_arg(dept), 
+    try:
+        results = connect_to_db([clean_arg(dept), 
                                     clean_arg(coursenum), 
                                     clean_arg(area), 
                                     clean_arg(title)],
                                     'get_overviews')
+        
+    except Exception as ex:
+        html_code = flask.render_template('error.html')
+        response = flask.make_response(html_code)
+
+        print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
+
+        return response
 
     html_code = flask.render_template('index.html', 
                                       results=str_or_empty(results), 

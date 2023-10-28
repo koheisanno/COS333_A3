@@ -8,6 +8,9 @@ import sqlite3
 
 DATABASE_URL = 'file:reg.sqlite?mode=ro'
 
+class MissingIdError(Exception):
+    pass
+
 def connect_to_db(args, query_type):
     with sqlite3.connect(DATABASE_URL, isolation_level=None,
             uri=True) as connection:
@@ -40,7 +43,7 @@ def connect_to_db(args, query_type):
                 class_data = cursor.fetchone()
 
                 if not class_data:
-                    raise Exception(('no class with classid '
+                    raise MissingIdError(('no class with classid '
                                     f'{args} exists'))
 
                 course_id = class_data[0]
