@@ -189,3 +189,199 @@ Error: cannot open display: localhost:11.0
 1698609583592	geckodriver	INFO	Listening on 127.0.0.1:35805
 1698609583676	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "40579" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilew68yfJ"
 Error: cannot open display: localhost:11.0
+1698620772189	geckodriver	INFO	Listening on 127.0.0.1:57869
+1698620772406	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/sm/phqgwmn54wg8myfr7vsq1vx80000gn/T/rust_mozprofiletMJf26"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698620774704	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+2023-10-29 19:06:14.796 plugin-container[29248:4402407] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:14.796 plugin-container[29248:4402407] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1698620774809	Marionette	INFO	Listening on port 57884
+2023-10-29 19:06:14.809 plugin-container[29248:4402407] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:14.809 plugin-container[29248:4402407] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 19:06:14.809 plugin-container[29248:4402414] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:14.809 plugin-container[29248:4402414] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:57870
+Read port: 57884
+1698620774965	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:57870/devtools/browser/79976fc6-2fd2-42b1-b551-3c8ebfd860db
+2023-10-29 23:06:15.791 plugin-container[29253:4402603] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:15.792 plugin-container[29253:4402603] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:06:15.793 plugin-container[29253:4402603] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:15.793 plugin-container[29253:4402603] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:06:15.793 plugin-container[29253:4402602] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:15.793 plugin-container[29253:4402602] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+1698620782184	Marionette	INFO	Stopped listening on port 57884
+1698620816301	geckodriver	INFO	Listening on 127.0.0.1:57945
+1698620816304	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/sm/phqgwmn54wg8myfr7vsq1vx80000gn/T/rust_mozprofile1JziQK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698620816486	Marionette	INFO	Marionette enabled
+2023-10-29 19:06:56.547 plugin-container[29325:4403268] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:56.547 plugin-container[29325:4403268] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+2023-10-29 19:06:56.549 plugin-container[29325:4403268] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:56.549 plugin-container[29325:4403268] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 19:06:56.549 plugin-container[29325:4403272] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:06:56.549 plugin-container[29325:4403272] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1698620816561	Marionette	INFO	Listening on port 57951
+WebDriver BiDi listening on ws://127.0.0.1:57946
+Read port: 57951
+1698620816684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+2023-10-29 23:06:57.214 plugin-container[29328:4403422] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:57.214 plugin-container[29328:4403422] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:06:57.215 plugin-container[29328:4403422] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:57.215 plugin-container[29328:4403422] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:06:57.215 plugin-container[29328:4403430] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:06:57.215 plugin-container[29328:4403430] nil host used in call to allowsAnyHTTPSCertificateForHost:
+DevTools listening on ws://127.0.0.1:57946/devtools/browser/d3f228e0-c2da-4a90-97c1-436c398a81d4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+1698620825449	Marionette	INFO	Stopped listening on port 57951
+1698621378726	geckodriver	INFO	Listening on 127.0.0.1:58070
+1698621379237	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/sm/phqgwmn54wg8myfr7vsq1vx80000gn/T/rust_mozprofileKsipCH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698621379567	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+2023-10-29 19:16:19.660 plugin-container[29666:4409166] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:19.660 plugin-container[29666:4409166] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 19:16:19.672 plugin-container[29666:4409166] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:19.672 plugin-container[29666:4409166] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 19:16:19.672 plugin-container[29666:4409168] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:19.672 plugin-container[29666:4409168] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1698621379673	Marionette	INFO	Listening on port 58078
+WebDriver BiDi listening on ws://127.0.0.1:58071
+Read port: 58078
+1698621379800	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:58071/devtools/browser/78c60469-b6ef-41eb-a939-97da54d54a8f
+2023-10-29 23:16:20.275 plugin-container[29671:4409358] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:20.275 plugin-container[29671:4409358] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:16:20.277 plugin-container[29671:4409358] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:20.277 plugin-container[29671:4409358] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:16:20.277 plugin-container[29671:4409363] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:20.277 plugin-container[29671:4409363] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://cos333reg1.cs.princeton.edu."
+1698621387593	Marionette	INFO	Stopped listening on port 58078
+1698621398821	geckodriver	INFO	Listening on 127.0.0.1:58108
+1698621398824	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/sm/phqgwmn54wg8myfr7vsq1vx80000gn/T/rust_mozprofileyrVjpa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698621399021	Marionette	INFO	Marionette enabled
+2023-10-29 19:16:39.083 plugin-container[29716:4409792] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:39.083 plugin-container[29716:4409792] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+2023-10-29 19:16:39.084 plugin-container[29716:4409792] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:39.084 plugin-container[29716:4409792] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 19:16:39.084 plugin-container[29716:4409790] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 19:16:39.084 plugin-container[29716:4409790] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1698621399097	Marionette	INFO	Listening on port 58114
+Read port: 58114
+WebDriver BiDi listening on ws://127.0.0.1:58109
+1698621399179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:58109/devtools/browser/f260d152-385c-40f6-bb59-a14548de13c8
+2023-10-29 23:16:39.737 plugin-container[29719:4409979] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:39.737 plugin-container[29719:4409979] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:16:39.738 plugin-container[29719:4409979] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:39.738 plugin-container[29719:4409979] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-29 23:16:39.738 plugin-container[29719:4409990] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-29 23:16:39.738 plugin-container[29719:4409990] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:55556."
+1698621406089	Marionette	INFO	Stopped listening on port 58114

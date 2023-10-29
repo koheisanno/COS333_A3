@@ -8,7 +8,8 @@ import sqlite3
 
 DATABASE_URL = 'file:reg.sqlite?mode=ro'
 
-class MissingIdError(Exception):
+# create custom exception to catch when no class matches id
+class NoSuchClassError(Exception):
     pass
 
 def connect_to_db(args, query_type):
@@ -43,7 +44,7 @@ def connect_to_db(args, query_type):
                 class_data = cursor.fetchone()
 
                 if not class_data:
-                    raise MissingIdError(('no class with classid '
+                    raise NoSuchClassError(('no class with classid '
                                     f'{args} exists'))
 
                 course_id = class_data[0]

@@ -1,9 +1,10 @@
 import sys
 import flask
-from reg_db import MissingIdError, connect_to_db
+from reg_db import NoSuchClassError, connect_to_db
 
 app = flask.Flask(__name__, template_folder='.')
 
+# clean argument
 def clean_arg(arg):
     if arg:
         arg = arg.replace('%', r'\%').replace('_', r'\_')
@@ -31,24 +32,27 @@ def regdetails():
 
     else:
         try:
+            # check that classid is a valid integer
             classid = int(classid)
-            success = True
-            results = connect_to_db(classid, 'get_detail')
+            try:
+                # if class is int, fetch results
+                results = connect_to_db(classid, 'get_detail')
+                success = True
+
+            except NoSuchClassError as ex:
+                success = False
+                results = ex
+                print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
+
+            except Exception as ex:
+                html_code = flask.render_template('error.html')
+                response = flask.make_response(html_code)
+
+                print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
+                return response
         except ValueError:
             success = False
             results = 'non-integer classid'
-
-        except MissingIdError as ex:
-            success = False
-            results = ex
-            print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
-
-        except Exception as ex:
-            html_code = flask.render_template('error.html')
-            response = flask.make_response(html_code)
-
-            print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
-            return response
 
     html_code = flask.render_template('regdetails.html',
                                       success=success, results=results,
