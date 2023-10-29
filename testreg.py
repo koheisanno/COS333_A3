@@ -67,8 +67,14 @@ def main():
     driver.get(server_url)
 
     run_test(driver, {'dept':'COS'})
-    run_test(driver,   {'dept':'COS', 'coursenum':'2', 'area':'qr', 'title':'intro'})
-    run_test(driver, {'dept':'COS', 'coursenum':'2', 'area':'qR', 'title':'iNtR'})
+    run_test(driver,   {'dept':'COS', 
+                        'coursenum':'2', 
+                        'area':'qr', 
+                        'title':'intro'})
+    run_test(driver, {'dept':'COS', 
+                      'coursenum':'2',
+                      'area':'qR', 
+                      'title':'iNtR'})
 
     run_test(driver, {})
     run_test(driver, {'title': ' Introduction'})
