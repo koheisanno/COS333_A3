@@ -1,0 +1,33 @@
+jc4557_ks1495
+
+Jacob Colchamiro Kohei Sanno
+
+Kohei Sanno: I contributed to this project by working on the front end
+and on error handling. I first created index.html, header.html, 
+error.html, regdetails.html, and footer.html. I then implemented a 
+preliminary version of registrar.py and got some basic queries running 
+properly. Finally, I worked on some of the error handling and 
+made sure our program matched the behavior of the reference for the 
+errors listed in the assignment specs. 
+
+Jacob Colchamiro: I contributed to this project by working on cookies,
+making the webpage stateful, debugging, and testing. I first worked
+on expanding Kohei's preliminary version to handle more complicated 
+queries; this required a change in the way we processed arguments 
+compared to how we did this in assignments 1 and 2. I then used cookies
+to make the project better match the reference program. I edited the 
+html files substantially throughout the process. Finally, I handled 
+testing and pylint/style edits. 
+
+We did not receive help from other people in working on this assignment. 
+
+We relied on the course lectures, the lecture code handouts, and the 
+class Ed forum substantially in working on this assignment. 
+
+We spent about 11 hours working on this assignment. 
+
+The assignment helped us to learn more about web programming and how to 
+use Flask and Jinja2. We feel that these are all important things to 
+learn that we had not had experience with before. This assignment was 
+also a bit easier to test than Assignment 2, which we appreciated. 
+
