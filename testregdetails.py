@@ -19,15 +19,18 @@ def run_test(driver, server_url, classid):
 
     print_flush('-----------------')
     print_flush('classid: ' + classid)
-    driver.get(server_url)
-    link_element = driver.find_element(By.LINK_TEXT, classid)
-    link_element.click()
-    class_details_table = driver.find_element(
-        By.ID, 'classDetailsTable')
-    print_flush(class_details_table.text)
-    course_details_table = driver.find_element(
-        By.ID, 'courseDetailsTable')
-    print_flush(course_details_table.text)
+    try:
+        driver.get(server_url)
+        link_element = driver.find_element(By.LINK_TEXT, classid)
+        link_element.click()
+        class_details_table = driver.find_element(
+            By.ID, 'classDetailsTable')
+        print_flush(class_details_table.text)
+        course_details_table = driver.find_element(
+            By.ID, 'courseDetailsTable')
+        print_flush(course_details_table.text)
+    except Exception as ex:
+        print(str(ex), file=sys.stderr)
 
 #-----------------------------------------------------------------------
 
@@ -48,8 +51,6 @@ def main():
     run_test(driver, server_url, '10183')
     run_test(driver, server_url, '9012')
     run_test(driver, server_url, '')
-
-    # Add more tests here.
 
     driver.quit()
 

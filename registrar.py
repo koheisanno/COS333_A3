@@ -1,5 +1,5 @@
-import flask
 import sys
+import flask
 from reg_db import MissingIdError, connect_to_db
 
 app = flask.Flask(__name__, template_folder='.')
@@ -12,8 +12,9 @@ def clean_arg(arg):
     return '%'
 
 def str_or_empty(arg):
-    if arg: return arg
-    else: return ""
+    if arg:
+        return arg
+    return ""
 
 @app.route('/regdetails', methods=['GET'])
 def regdetails():
@@ -33,7 +34,6 @@ def regdetails():
             classid = int(classid)
             success = True
             results = connect_to_db(classid, 'get_detail')
-        
         except ValueError:
             success = False
             results = 'non-integer classid'
@@ -50,8 +50,13 @@ def regdetails():
             print(f'{sys.argv[0]}: {ex}', file=sys.stderr)
             return response
 
-    html_code = flask.render_template('regdetails.html', success=success, results=results, dept = last_dept, coursenum = last_coursenum,
-                                      area = last_area, title = last_title, classid = classid)
+    html_code = flask.render_template('regdetails.html',
+                                      success=success, results=results,
+                                      dept = last_dept,
+                                      coursenum = last_coursenum,
+                                      area = last_area,
+                                      title = last_title,
+                                      classid = classid)
     response = flask.make_response(html_code)
     return response
 
@@ -63,12 +68,11 @@ def index():
     title = flask.request.args.get('title')
 
     try:
-        results = connect_to_db([clean_arg(dept), 
-                                    clean_arg(coursenum), 
-                                    clean_arg(area), 
+        results = connect_to_db([clean_arg(dept),
+                                    clean_arg(coursenum),
+                                    clean_arg(area),
                                     clean_arg(title)],
-                                    'get_overviews')
-        
+                                    'get_overviews')    
     except Exception as ex:
         html_code = flask.render_template('error.html')
         response = flask.make_response(html_code)
@@ -77,8 +81,8 @@ def index():
 
         return response
 
-    html_code = flask.render_template('index.html', 
-                                      results=str_or_empty(results), 
+    html_code = flask.render_template('index.html',
+                                      results=str_or_empty(results),
                                       dept=str_or_empty(dept),
                                       coursenum=str_or_empty(coursenum),
                                       area=str_or_empty(area),
@@ -90,4 +94,3 @@ def index():
     response.set_cookie('title', str_or_empty(title))
 
     return response
-
